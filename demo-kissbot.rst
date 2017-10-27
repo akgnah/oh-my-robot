@@ -96,4 +96,4 @@ datetime 是另一个处理日期和时间的模块，有些功能比 time 中�
    ...     time.sleep(60)
 
 
-你只需要把你实际想做的工作放在函数 work 中即可，运行它，它会一直运行，并在恰当的时候执行 work。完整的可定时执行机器人的代码可点击 `kissbot_cron.py <code/kissbot_cron.py>`_ 查看。
+你只需要把你实际想做的工作放在函数 work 中即可，运行它，它会一直运行，并在恰当的时候执行 work。完整的可定时执行的机器人代码可点击 `kissbot_cron.py <code/kissbot_cron.py>`_ 查看。

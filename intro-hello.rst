@@ -20,7 +20,9 @@ Python 有 2 和 3 两个主要的版本，在这个教程中我们使用 Python
 Hello, Python
 -----------------
 
-在这个教程中使用 Windows 10 作示例操作，同时使用 命令行提示符 来指代 Windows 的 CMD 或 Mac OS / Linux 的终端（terminal），下文不再说明。
+在这个教程中使用 Windows 10 作示例操作，下文中提到的 命令行提示符（或 cmd ），它可以在开始菜单中找到：
+
+.. image:: image/start_cmd.png
 
 完成安装后，你会在开始菜单看到一个 Python 3.6 的文件夹，现在请点击其中的 Python 3.6 来开始写你的第一行代码，这是 Python 的交互环境。
 
