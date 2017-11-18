@@ -130,5 +130,5 @@ Tab 补全能让你少按些键盘，还能避免手误输入错误。
 后者用于把 API 服务器返回的 json 转换成 Python 内置的对象。
 
 还有剩下的几条 API 请点击上面的链接简单浏览一下。在上面的认证过程中，我们使用了较为简单的 XAuth 认证方式，如果 OAuth 认证方式感兴趣，
-可以查看 `fanfou-py <https://githun.com/akgnah/fanfou-py>`_ 的文档，文档中有详细的说明，还有收集有一些使用 fanfou-py 的应用作为 Demo。
+可以查看 `fanfou-py <https://github.com/akgnah/fanfou-py>`_ 的文档，文档中有详细的说明，还有收集有一些使用 fanfou-py 的应用作为 Demo。
 
