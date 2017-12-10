@@ -16,7 +16,7 @@
    intro-func
    intro-class
    fanfou-api
-   demo-kissbot
+   demo-bigben
    demo-poems
    demo-greet
    oh-the-end
