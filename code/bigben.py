@@ -10,5 +10,5 @@ client = fanfou.XAuth(consumer, 'username', 'password')
 fanfou.bound(client)
 
 now = datetime.datetime.now()
-bong = 'Bong ' * ((now.hour % 12) or 1)
+bong = 'Bong ' * ((now.hour % 12) or 12)
 client.statuses.update({'status': bong[:-1] + '!'})

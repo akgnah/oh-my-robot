@@ -2,7 +2,7 @@ Demo：小本钟
 ===============
 
 发现 `@大本钟 <https://fanfou.com/大本钟>`_ 好像休假了，于是我写了 `@小本钟 <https://fanfou.com/tinyben>`_ 去替班，
-这应该是饭否上最简单的机器人之一，前后动手到上线不到三分钟（没错，Python 就是这么棒），下面我们直接来看代码（ `bigben.py <code/bigben.py>`_ ）吧：
+这应该是饭否上最简单的机器人之一，前后动手到上线不到五分钟（没错，Python 就是这么棒），下面我们直接来看代码（ `bigben.py <code/bigben.py>`_ ）吧：
 
 .. code-block:: python
 
@@ -18,7 +18,7 @@ Demo：小本钟
    fanfou.bound(client)
 
    now = datetime.datetime.now()
-   bong = 'Bong ' * ((now.hour % 12) or 1)
+   bong = 'Bong ' * ((now.hour % 12) or 12)
    client.statuses.update({'status': bong[:-1] + '!'})
 
 

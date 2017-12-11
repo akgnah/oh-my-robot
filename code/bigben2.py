@@ -4,7 +4,6 @@ import time
 import datetime
 import fanfou
 
-
 # 请修改为你的 Consumer
 consumer = {'key': 'consumer key', 'secret': 'consumer secret'}
 # 请修改为你的 ID 和密码
@@ -14,7 +13,7 @@ fanfou.bound(client)
 
 def work():
     now = datetime.datetime.now()
-    bong = 'Bong ' * ((now.hour % 12) or 1)
+    bong = 'Bong ' * ((now.hour % 12) or 12)
     client.statuses.update({'status': bong[:-1] + '!'})
 
 
