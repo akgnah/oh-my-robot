@@ -82,15 +82,38 @@ __init__ 方法中的第一个参数 self 表示实例本身，它可以为任�
    >>> client1.version
    '0.2.0'
    >>> client2.version
-   '0.2.0'
-   >>> client2.version = '0.2.5'
-   >>> client2.version
-   '0.2.5'
+   '0.1.0'
+   >>> Auth.version
+   '0.1.0'
+   >>> Auth.version = '0.3.0'
    >>> client1.version
-   '0.2.5'
+   '0.2.0'
+   >>> client2.version
+   '0.3.0'
    >>> 
 
-直接定义在类中的字段我们称为类的属性，类的属性是由它的全部实例共享的，在某一个实例中对类的属性的修改会反映在其他实例身上。我们可以用等号（=）直接对类或对象的属性赋值，即可修改它们。
+直接定义在类中的字段我们称为类的属性，类的属性由它的全部实例共享，此时我们可以使用等号（=）对属性赋值，这将会修改它。在实例中对属性修改会产生一个实例属性，并且它会屏蔽类属性，因为前者的优先级比后者高。
+
+在某一实列中对类属性修改，并不会反映在其他实例身上。除了一个例外，当类属性是可变类型，并且我们原地修改它，下面的代码复制自官方文档（感谢二心指出我愚蠢的错误）：
+
+.. code-block:: python
+
+   >>> class Dog:
+   ...     tricks = []             # mistaken use of a class variable
+   ... 
+   ...     def __init__(self, name):
+   ...         self.name = name
+   ... 
+   ...     def add_trick(self, trick):
+   ...         self.tricks.append(trick)
+   ... 
+   >>> d = Dog('Fido')
+   >>> e = Dog('Buddy')
+   >>> d.add_trick('roll over')
+   >>> e.add_trick('play dead')
+   >>> d.tricks                # unexpectedly shared by all dogs
+   ['roll over', 'play dead']
+   >>> 
 
 我们使用类和对象很大一部分是为了代码复用，类的继承是很好的复用手段。
 
