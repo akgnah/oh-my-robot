@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎阅读 oh-my-robot 教程
+零基础写 Python 机器人
 ============================
 
 .. toctree::

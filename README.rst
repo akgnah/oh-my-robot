@@ -1,7 +1,7 @@
 来写机器人呀
 ==============
 
-大家好，我是小鲸鱼（`@Mr.Greeting <https://fanfou.com/testbytse>`_）的作者（`@home2 <https://fanfou.com/home2>`_），这是一个简短的教程，用来帮助你写自己的饭否机器人。
+大家好，我是小鲸鱼（ `@Mr.Greeting <https://fanfou.com/testbytse>`_ ）的作者（ `@home2 <https://fanfou.com/home2>`_ ），这是一个简短的教程，用来帮助你写自己的饭否机器人。
 
 
 2016 年 7 月，有名饭友添加我的微信，发给我一个红包，附言说在 Github 上看了小鲸鱼的代码，交个学费。

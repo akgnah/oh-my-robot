@@ -113,7 +113,7 @@ fanfou-py 会为每个 API URL 提供对应的方法，我们只需要简单调�
 告诉你一个技巧，如果你使用 ipython 在输入这些代码，当你输入了一半字母，按 Tab 键即可补全，如输入了 client.stat 接着按 Tab，然后再输入 .home 再按 Tab，
 Tab 补全能让你少按些键盘，还能避免手误输入错误。
 
-让我们通过 API 来更新（update）一条饭吧：
+让我们通过 API 来更新（update）一条消息吧：
 
 .. code-block:: python
 
